@@ -75,7 +75,7 @@ backoff:
   max_ms: 60000
 
 listeners:
-  - handler: Phobos::EchoHandler
+  - handler: EventHandler
     topic: test
     # id of the group that the consumer should join
     group_id: test-1
