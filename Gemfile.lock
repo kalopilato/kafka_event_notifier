@@ -1,11 +1,41 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (5.1.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    concurrent-ruby (1.0.5)
+    concurrent-ruby-ext (1.0.5)
+      concurrent-ruby (= 1.0.5)
+    exponential-backoff (0.0.2)
+    i18n (0.8.1)
+    little-plugger (1.1.4)
+    logging (2.2.2)
+      little-plugger (~> 1.1)
+      multi_json (~> 1.10)
+    minitest (5.10.1)
+    multi_json (1.12.1)
+    phobos (1.2.1)
+      activesupport (>= 4.0.0)
+      concurrent-ruby (>= 1.0.2)
+      concurrent-ruby-ext (>= 1.0.2)
+      exponential-backoff
+      logging
+      ruby-kafka (>= 0.3.14)
+      thor
+    ruby-kafka (0.3.17)
+    thor (0.19.4)
+    thread_safe (0.3.6)
+    tzinfo (1.2.3)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  phobos
 
 BUNDLED WITH
    1.14.6
