@@ -18,3 +18,5 @@ PhobosDBCheckpoint.configure(pool_size: 10)
 PhobosDBCheckpoint.load_tasks
 Rake.application['db:create'].invoke
 Rake.application['db:migrate'].invoke
+
+PhobosDBCheckpoint.configure(pool_size: 10)

@@ -771,3 +771,7 @@
 {"timestamp":"2017-05-09T16:18:53.183247+12:00","level":"INFO","logger":"Phobos","message":{"message":"Retry loop aborted, listener is shutting down","listener_id":"c9a09a","group_id":"test-1","topic":"test"}}
 {"timestamp":"2017-05-09T16:18:53.183472+12:00","level":"INFO","logger":"Phobos","message":{"message":"Listener stopped","listener_id":"c9a09a","group_id":"test-1","topic":"test"}}
 {"timestamp":"2017-05-09T16:18:53.183684+12:00","level":"INFO","logger":"Phobos","message":{"message":"Executor stopped"}}
+{"timestamp":"2017-05-10T11:05:09.464087+12:00","level":"INFO","logger":"Phobos","message":{"message":"Phobos configured","env":"development"}}
+{"timestamp":"2017-05-10T11:05:10.631600+12:00","level":"INFO","logger":"Phobos","message":{"message":"Listener started","listener_id":"0ed8c3","group_id":"test-1","topic":"test"}}
+{"timestamp":"2017-05-10T11:05:10.767132+12:00","level":"INFO","logger":"Phobos","message":{"message":"Committed offset","batch_size":2,"partition":0,"offset_lag":0,"highwater_mark_offset":26,"listener_id":"0ed8c3","group_id":"test-1","topic":"test","time_elapsed":0.062}}
+{"timestamp":"2017-05-10T11:05:27.072276+12:00","level":"INFO","logger":"Phobos","message":{"message":"Committed offset","batch_size":1,"partition":0,"offset_lag":0,"highwater_mark_offset":27,"listener_id":"0ed8c3","group_id":"test-1","topic":"test","time_elapsed":0.01}}
