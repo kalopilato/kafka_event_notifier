@@ -1,0 +1,2 @@
+require 'phobos_db_checkpoint'
+PhobosDBCheckpoint.load_tasks

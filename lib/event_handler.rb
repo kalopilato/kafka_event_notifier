@@ -1,5 +1,5 @@
 class EventHandler
-  include Phobos::Handler
+  include PhobosDBCheckpoint::Handler
 
   # def self.start(kafka_client)
   #   # setup handler
@@ -17,5 +17,9 @@ class EventHandler
 
   def consume(payload, metadata)
     puts "Payload: #{payload}\nMetadata: #{metadata}"
+
+    # my_event = JSON.parse(payload)
+    # ack(my_event['id'], Time.now)
+    ack(1, Time.now);
   end
 end
