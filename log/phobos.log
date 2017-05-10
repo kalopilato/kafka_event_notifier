@@ -935,3 +935,10 @@
 {"timestamp":"2017-05-10T15:51:42.753962+12:00","level":"INFO","logger":"Phobos","message":{"message":"Listener stopping","listener_id":"ef1ea5","group_id":"test-1","topic":"test"}}
 {"timestamp":"2017-05-10T15:51:45.043182+12:00","level":"INFO","logger":"Phobos","message":{"message":"Listener stopped","listener_id":"ef1ea5","group_id":"test-1","topic":"test"}}
 {"timestamp":"2017-05-10T15:51:45.043536+12:00","level":"INFO","logger":"Phobos","message":{"message":"Executor stopped"}}
+{"timestamp":"2017-05-10T15:58:13.907665+12:00","level":"INFO","logger":"Phobos","message":{"message":"Phobos configured","env":"development"}}
+{"timestamp":"2017-05-10T15:58:14.761859+12:00","level":"INFO","logger":"Phobos","message":{"message":"Listener started","listener_id":"5fb220","group_id":"test-1","topic":"test"}}
+{"timestamp":"2017-05-10T15:58:34.205832+12:00","level":"INFO","logger":"Phobos","message":{"message":"Phobos configured","env":"development"}}
+{"timestamp":"2017-05-10T15:58:54.118574+12:00","level":"INFO","logger":"Phobos","message":{"message":"Listener stopping","listener_id":"5fb220","group_id":"test-1","topic":"test"}}
+{"timestamp":"2017-05-10T15:58:54.788058+12:00","level":"INFO","logger":"Phobos","message":{"message":"Listener stopped","listener_id":"5fb220","group_id":"test-1","topic":"test"}}
+{"timestamp":"2017-05-10T15:58:54.788368+12:00","level":"INFO","logger":"Phobos","message":{"message":"Executor stopped"}}
+{"timestamp":"2017-05-10T15:59:01.425093+12:00","level":"INFO","logger":"Phobos","message":{"message":"Phobos configured","env":"development"}}
