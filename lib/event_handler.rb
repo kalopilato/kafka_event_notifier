@@ -12,11 +12,9 @@ class EventHandler
   #   # teardown
   # end
 
-  # def self.around_consume(payload, metadata)
-  #   Phobos.logger.info "consuming..."
-  #   output = yield
-  #   Phobos.logger.info "done, output: #{output}"
-  # end
+  def self.around_consume(payload, metadata)
+    super(JSON.parse(payload), metadata)
+  end
 
   # This method will attempt to process the incoming event (payload, metadata).
   # If the event is successfully processed (i.e. no exception thrown), the call
@@ -26,11 +24,11 @@ class EventHandler
   # If the event is not successfully processed (i.e. no ack returned), the event
   # will be persisted as a failure.
   def consume(payload, metadata)
-    puts "Payload: #{payload}\nMetadata: #{metadata}"
+    event = JSON.parse(payload)
 
     mailer = SesMailer.new
-    mailer.send(payload)
+    mailer.send(event)
 
-    ack(1, Time.now)
+    ack(event[:id], Time.now)
   end
 end

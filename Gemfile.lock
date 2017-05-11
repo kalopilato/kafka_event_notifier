@@ -34,7 +34,7 @@ GEM
     logging (2.2.2)
       little-plugger (~> 1.1)
       multi_json (~> 1.10)
-    minitest (5.10.1)
+    minitest (5.10.2)
     multi_json (1.12.1)
     mustermann (1.0.0)
     pg (0.19.0)
