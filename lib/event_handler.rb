@@ -25,9 +25,9 @@ class EventHandler
   # will be persisted as a failure.
   def consume(payload, metadata)
     event = JSON.parse(payload)
-
-    mailer = SesMailer.new
-    mailer.send(event)
+    puts "Consuming event: #{event}"
+    # mailer = SesMailer.new
+    # mailer.send(event)
 
     ack(event[:id], Time.now)
   end

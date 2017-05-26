@@ -10,3 +10,11 @@ To start this app:
 ```
 phobos start
 ```
+
+This app expects the kafka event payload to be in JSON form, else it will explode when
+handling events.  The only other requirement of this payload is that it must have an `id` attribute.
+
+Example payload:
+```
+{"id"=>"1", "data"=>"all of the things"}
+```
