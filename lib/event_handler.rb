@@ -1,5 +1,5 @@
 require 'byebug'
-require './lib/ses_mailer'
+require './lib/sqs_worker'
 
 class EventHandler
   include PhobosDBCheckpoint::Handler
@@ -26,8 +26,9 @@ class EventHandler
   def consume(payload, metadata)
     event = JSON.parse(payload)
     puts "Consuming event: #{event}"
-    # mailer = SesMailer.new
-    # mailer.send(event)
+
+    # Queue the payload in SQS
+    SqsWorker.perform_async(event)
 
     ack(event[:id], Time.now)
   end
